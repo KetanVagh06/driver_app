@@ -1,13 +1,5 @@
-import 'package:driver_app/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
-
-import 'Pages/AccountScreen.dart';
-import 'Pages/BottomBar.dart';
-import 'Pages/LogoutScreen.dart';
-import 'Pages/OrderScreen.dart';
-import 'Pages/SettingScreen.dart';
-import 'Screens/LoginScreen.dart';
-import 'Screens/Walkthrough.dart';
+import 'Static/importfiles.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,6 +24,9 @@ class _MyAppState extends State<MyApp> {
         "/AccountScreen":(context) => AccountScreen(),
         "/LogoutScreen":(context) => LogoutScreen(),
         "/Walkthrough":(context) => Walkthrough(),
+        "/LoginForm":(context) => LoginForm(),
+        "/SignUpForm":(context) => SignUpForm(),
+        "/DeliveryDetailScreen":(context) => DeliveryDetailScreen(),
       },
     );
 

@@ -26,6 +26,12 @@ class _WalkthroughState extends State<Walkthrough> {
           )
         ],
       )),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.double_arrow_rounded),
+        onPressed: (){
+          Navigator.of(context).pushReplacementNamed('/LoginScreen');
+        },
+      ),
     );
   }
 }
